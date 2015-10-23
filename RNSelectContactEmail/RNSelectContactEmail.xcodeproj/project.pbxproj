@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFDEF1591BDADF38002525EA /* RNSelectContactEmail.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DFDEF1581BDADF38002525EA /* RNSelectContactEmail.h */; };
+		DFDEF15B1BDADF38002525EA /* RNSelectContactEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDEF15A1BDADF38002525EA /* RNSelectContactEmail.m */; };
+		DFDEF1611BDADF38002525EA /* libRNSelectContactEmail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDEF1551BDADF38002525EA /* libRNSelectContactEmail.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFDEF1621BDADF38002525EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFDEF14D1BDADF38002525EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFDEF1541BDADF38002525EA;
+			remoteInfo = RNSelectContactEmail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFDEF1531BDADF38002525EA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				DFDEF1591BDADF38002525EA /* RNSelectContactEmail.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DFDEF1551BDADF38002525EA /* libRNSelectContactEmail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNSelectContactEmail.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFDEF1581BDADF38002525EA /* RNSelectContactEmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNSelectContactEmail.h; sourceTree = "<group>"; };
+		DFDEF15A1BDADF38002525EA /* RNSelectContactEmail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNSelectContactEmail.m; sourceTree = "<group>"; };
+		DFDEF1601BDADF38002525EA /* RNSelectContactEmailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNSelectContactEmailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFDEF1661BDADF38002525EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFDEF1521BDADF38002525EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFDEF15D1BDADF38002525EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFDEF1611BDADF38002525EA /* libRNSelectContactEmail.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFDEF14C1BDADF38002525EA = {
+			isa = PBXGroup;
+			children = (
+				DFDEF1571BDADF38002525EA /* RNSelectContactEmail */,
+				DFDEF1641BDADF38002525EA /* RNSelectContactEmailTests */,
+				DFDEF1561BDADF38002525EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFDEF1561BDADF38002525EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFDEF1551BDADF38002525EA /* libRNSelectContactEmail.a */,
+				DFDEF1601BDADF38002525EA /* RNSelectContactEmailTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFDEF1571BDADF38002525EA /* RNSelectContactEmail */ = {
+			isa = PBXGroup;
+			children = (
+				DFDEF1581BDADF38002525EA /* RNSelectContactEmail.h */,
+				DFDEF15A1BDADF38002525EA /* RNSelectContactEmail.m */,
+			);
+			path = RNSelectContactEmail;
+			sourceTree = "<group>";
+		};
+		DFDEF1641BDADF38002525EA /* RNSelectContactEmailTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFDEF1651BDADF38002525EA /* Supporting Files */,
+			);
+			path = RNSelectContactEmailTests;
+			sourceTree = "<group>";
+		};
+		DFDEF1651BDADF38002525EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFDEF1661BDADF38002525EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFDEF1541BDADF38002525EA /* RNSelectContactEmail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFDEF1691BDADF38002525EA /* Build configuration list for PBXNativeTarget "RNSelectContactEmail" */;
+			buildPhases = (
+				DFDEF1511BDADF38002525EA /* Sources */,
+				DFDEF1521BDADF38002525EA /* Frameworks */,
+				DFDEF1531BDADF38002525EA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNSelectContactEmail;
+			productName = RNSelectContactEmail;
+			productReference = DFDEF1551BDADF38002525EA /* libRNSelectContactEmail.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DFDEF15F1BDADF38002525EA /* RNSelectContactEmailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFDEF16C1BDADF38002525EA /* Build configuration list for PBXNativeTarget "RNSelectContactEmailTests" */;
+			buildPhases = (
+				DFDEF15C1BDADF38002525EA /* Sources */,
+				DFDEF15D1BDADF38002525EA /* Frameworks */,
+				DFDEF15E1BDADF38002525EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFDEF1631BDADF38002525EA /* PBXTargetDependency */,
+			);
+			name = RNSelectContactEmailTests;
+			productName = RNSelectContactEmailTests;
+			productReference = DFDEF1601BDADF38002525EA /* RNSelectContactEmailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFDEF14D1BDADF38002525EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = rhaker;
+				TargetAttributes = {
+					DFDEF1541BDADF38002525EA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					DFDEF15F1BDADF38002525EA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = DFDEF1501BDADF38002525EA /* Build configuration list for PBXProject "RNSelectContactEmail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFDEF14C1BDADF38002525EA;
+			productRefGroup = DFDEF1561BDADF38002525EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFDEF1541BDADF38002525EA /* RNSelectContactEmail */,
+				DFDEF15F1BDADF38002525EA /* RNSelectContactEmailTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFDEF15E1BDADF38002525EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFDEF1511BDADF38002525EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFDEF15B1BDADF38002525EA /* RNSelectContactEmail.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFDEF15C1BDADF38002525EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFDEF1631BDADF38002525EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFDEF1541BDADF38002525EA /* RNSelectContactEmail */;
+			targetProxy = DFDEF1621BDADF38002525EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFDEF1671BDADF38002525EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFDEF1681BDADF38002525EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFDEF16A1BDADF38002525EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../react-native/React/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DFDEF16B1BDADF38002525EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../react-native/React/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DFDEF16D1BDADF38002525EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RNSelectContactEmailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DFDEF16E1BDADF38002525EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RNSelectContactEmailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFDEF1501BDADF38002525EA /* Build configuration list for PBXProject "RNSelectContactEmail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFDEF1671BDADF38002525EA /* Debug */,
+				DFDEF1681BDADF38002525EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFDEF1691BDADF38002525EA /* Build configuration list for PBXNativeTarget "RNSelectContactEmail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFDEF16A1BDADF38002525EA /* Debug */,
+				DFDEF16B1BDADF38002525EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DFDEF16C1BDADF38002525EA /* Build configuration list for PBXNativeTarget "RNSelectContactEmailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFDEF16D1BDADF38002525EA /* Debug */,
+				DFDEF16E1BDADF38002525EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFDEF14D1BDADF38002525EA /* Project object */;
+}
