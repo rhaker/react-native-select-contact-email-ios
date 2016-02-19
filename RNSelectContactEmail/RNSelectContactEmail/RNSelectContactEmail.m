@@ -1,20 +1,20 @@
 //
-//  RNSelectContactEmail.m
-//  RNSelectContactEmail
+//  RNSelectContactPhone.m
+//  RNSelectContactPhone
 //
 //  Created by Ross Haker on 10/22/15.
 //  Copyright (c) 2015 Facebook. All rights reserved.
 //
 
-#import "RNSelectContactEmail.h"
+#import "RNSelectContactPhone.h"
 
-@implementation RNSelectContactEmail
+@implementation RNSelectContactPhone
 
 // Expose this module to the React Native bridge
 RCT_EXPORT_MODULE()
 
 // Persist data
-RCT_EXPORT_METHOD(selectEmail:(BOOL *)boolType
+RCT_EXPORT_METHOD(selectPhone:(BOOL *)boolType
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
@@ -38,7 +38,7 @@ RCT_EXPORT_METHOD(selectEmail:(BOOL *)boolType
     // check that ios is version 8.0 or higher
     if (ver_float < 8.0) {
         
-        reject(error);
+        reject(@"500", @"ios8 or higher required", error);
         
     } else {
         
@@ -54,7 +54,7 @@ RCT_EXPORT_METHOD(selectEmail:(BOOL *)boolType
                                 NSLocalizedDescriptionKey:@"Permissions denied by user."
                                 }];
             
-            reject(error);
+            reject(@"500", @"Permissions denied by user.", error);
             
         } else if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusAuthorized){
             
@@ -81,7 +81,7 @@ RCT_EXPORT_METHOD(selectEmail:(BOOL *)boolType
                                                        NSLocalizedDescriptionKey:@"Permissions denied by user."
                                                        }];
                     
-                    reject(errorDenied);
+                    reject(@"500", @"Permissions denied by user.", errorDenied);
                     return;
                 }
                 
@@ -106,20 +106,20 @@ RCT_EXPORT_METHOD(selectEmail:(BOOL *)boolType
 {
     
     // set the fields from the adddress book
-    NSString *email = nil;
+    NSString *phoneNumber = nil;
     
-    // get the email
+    // get the phone
     if (ABRecordCopyValue(person, kABPersonPhoneProperty)) {
-        ABMultiValueRef emails = (ABMultiValueRef) ABRecordCopyValue(person, kABPersonEmailProperty);
-        CFStringRef emailID = ABMultiValueCopyValueAtIndex(emails, 0);
-        email = (__bridge_transfer NSString *)emailID;
+        ABMultiValueRef phone = (ABMultiValueRef) ABRecordCopyValue(person, kABPersonPhoneProperty);
+        CFStringRef phoneID = ABMultiValueCopyValueAtIndex(phone, 0);
+        phoneNumber = (__bridge_transfer NSString *)phoneID;
     }
     
     UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
     [vc dismissViewControllerAnimated:YES completion:nil];
     
-    // resolve the email
-    self.resolve(email);
+    // resolve the phone number
+    self.resolve(phoneNumber);
 }
 
 -(BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier{
