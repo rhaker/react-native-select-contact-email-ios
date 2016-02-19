@@ -1,20 +1,20 @@
 //
-//  RNSelectContactPhone.m
-//  RNSelectContactPhone
+//  RNSelectContactEmail.m
+//  RNSelectContactEmail
 //
 //  Created by Ross Haker on 10/22/15.
 //  Copyright (c) 2015 Facebook. All rights reserved.
 //
 
-#import "RNSelectContactPhone.h"
+#import "RNSelectContactEmail.h"
 
-@implementation RNSelectContactPhone
+@implementation RNSelectContactEmail
 
 // Expose this module to the React Native bridge
 RCT_EXPORT_MODULE()
 
 // Persist data
-RCT_EXPORT_METHOD(selectPhone:(BOOL *)boolType
+RCT_EXPORT_METHOD(selectEmail:(BOOL *)boolType
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
@@ -106,20 +106,20 @@ RCT_EXPORT_METHOD(selectPhone:(BOOL *)boolType
 {
     
     // set the fields from the adddress book
-    NSString *phoneNumber = nil;
+    NSString *email = nil;
     
-    // get the phone
+    // get the email
     if (ABRecordCopyValue(person, kABPersonPhoneProperty)) {
-        ABMultiValueRef phone = (ABMultiValueRef) ABRecordCopyValue(person, kABPersonPhoneProperty);
-        CFStringRef phoneID = ABMultiValueCopyValueAtIndex(phone, 0);
-        phoneNumber = (__bridge_transfer NSString *)phoneID;
+        ABMultiValueRef emails = (ABMultiValueRef) ABRecordCopyValue(person, kABPersonEmailProperty);
+        CFStringRef emailID = ABMultiValueCopyValueAtIndex(emails, 0);
+        email = (__bridge_transfer NSString *)emailID;
     }
     
     UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
     [vc dismissViewControllerAnimated:YES completion:nil];
     
-    // resolve the phone number
-    self.resolve(phoneNumber);
+    // resolve the email
+    self.resolve(email);
 }
 
 -(BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier{
